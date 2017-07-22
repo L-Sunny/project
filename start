@@ -1,0 +1,21 @@
+# project
+1.
+function MyValue(a,b){ 
+  var sum = 0; 
+  sum = a + b; 
+  return sum; 
+} 
+MyValue(5,3)
+
+2.
+const MyS = (x,y) =>{ 
+  let sum = 0; 
+  return (sum = x + y) 
+} 
+MyS(3,9);
+
+3.
+const Myn = (a,b) =>(a * b) Myn(10,2);
+
+4.
+const Mn = (a,b) =>({a:10,b:30}) Mn()

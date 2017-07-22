@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>Porschev---Jquery 事件冒泡</title>
+
+</head>
+<body>
+　　<div id="divOne" onclick="alert('我是最外层!');" >
+　　　 <div id="divTwo" onclick="alert('我是中间层!')">
+　　　　　　<a  id="hr_three" 
+               href="http://www.baidu.com" 
+               onclick="stopBubble()">点击我
+            </a>
+　　　 </div>
+　　</div>
+
+<script>
+  /*阻止冒泡事件*/
+    function stopBubble(event) {  
+        if (event && event.stopPropagation)  
+            event.stopPropagation()；  
+        else{
+            window.event.cancelBubble = true； 
+        } 
+    } 
+    
+    /*事件从里到外依次执行，stopPropagation()阻止事件执行*/
+</script>
+
+</body>
+</html> 

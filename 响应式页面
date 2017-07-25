@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>响应式页面</title>
+    <style>
+        body {
+            font-family:"Lucida Sans", Verdana, sans-serif;
+        }
+        h1{
+            font-size:1.625em;
+        }
+        h2{
+            font-size:1.375em;
+        }
+        .container {
+            width:100%;
+        }
+        .header{
+            width: 100%;
+            padding: 1%;
+            background-color:#f1f1f1;
+            border:1px solid #e9e9e9;
+            box-sizing: border-box;
+            margin-bottom: 2.0242914979757085020242914979757%;
+        }
+        .content{
+            width: 100%;
+        }
+        .left{
+            width:23.481781376518218623481781376518%;
+        }
+        .menuitem{
+            border-bottom:1px solid #e9e9e9;
+            cursor:pointer;
+            margin:4.310344827586206896551724137931%;
+            margin-left:0;
+            margin-top:0;
+            padding:4.310344827586206896551724137931%;
+        }
+        .content{
+            width:48.987854251012145748987854251012%;
+        }
+        .content img{
+            width: 100%;
+        }
+        .right{
+            width:23.481781376518218623481781376518%;
+            margin-right:0 !important;
+        }
+        .box {
+            margin-bottom:2.0242914979757085020242914979757%;
+            margin-right: 2.0242914979757085020242914979757%;
+            float:left;
+        }
+        .footer{
+            width: 100%;
+            background-color:#f1f1f1;
+            border:1px solid #e9e9e9;
+            padding: 1%;
+            font-size:0.625em;
+            text-align: center;
+        }
+        .wrapper {
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 800px){
+            .left,.content,.right{
+                width: 100%;
+                padding:1.0121457489878542510121457489879%;
+                box-sizing: border-box;
+            }
+            .menuitem {
+                margin:1.0121457489878542510121457489879%;
+            }
+            .box {
+                margin-right:0;
+                float:left;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>The Pulpit Rock</h1>
+    </div>
+    <div class="wrapper">
+        <div class="box left">
+            <div class="menuitem">The Drive</div>
+            <div class="menuitem">The Walk</div>
+            <div class="menuitem">The Return</div>
+            <div class="menuitem">The End</div>
+        </div>
+        <div class="box content">
+            <h1>The Walk</h1>
+            <p>The walk to the Pulpit Rock will take you approximately two hours, give or take an hour depending on the
+                weather conditions and your physical shape.</p>
+            <img src="blog-banner-d.jpg" alt="Pulpit rock" width="" height="">
+        </div>
+        <div class="box right">
+            <h2>What?</h2>
+            <p>The Pulpit Rock is a part of a mountain that looks like a pulpit.</p>
+            <h2>Where?</h2>
+            <p>The Pulpit Rock is in Norway</p>
+            <h2>Price?</h2>
+            <p>The walk is free!</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>This web page is a part of a demonstration of fluid web design made by www.w3schools.com. Resize the
+            browser window to see the content response to the resizing.</p>
+    </div>
+</div>
+</body>
+</html>
